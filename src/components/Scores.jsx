@@ -19,7 +19,7 @@ export default function Scores({Course_Name, results}) {
                         <tr key={index}>
                             <td>{element.firstName}</td>
                             <td>{element.lastName}</td>
-                            <td>{element.score}</td>
+                            <td className={element.score < 50 ? 'warning' : ''} >{element.score}</td>
                         </tr>  
                      )
                 })}
